@@ -7,7 +7,7 @@
     element.className = index % 2 ? "tulipan" : "flor";
     element.style.setProperty("--s", `${size}px`);
     element.style.setProperty("--p", colors[index % colors.length]);
-    element.style.setProperty("--spin", `${24 + index % 7 * 3}s`);
+    element.style.setProperty("--spin", `${14 + index % 5 * 2}s`);
     element.style.setProperty("--delay", `${-index * 2}s`);
     element.style.setProperty("--direction", index % 3 ? "normal" : "reverse");
     if (index % 2) {

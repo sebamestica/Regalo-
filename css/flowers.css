@@ -1,10 +1,10 @@
 /* Rotate the whole flower, leaving each petal's own transform intact. */
 .flor{
-  animation:flower-turn var(--spin,32s) linear var(--delay,0s) infinite;
+  animation:flower-turn var(--spin,18s) linear var(--delay,0s) infinite;
   animation-direction:var(--direction,normal);
   transform-origin:center;
 }
-@keyframes flower-turn{to{transform:rotate(360deg)}}
+@keyframes flower-turn{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
 .tulipan{position:relative;width:var(--s);height:var(--s);opacity:var(--o,.85)}
 .tulipan svg{display:block;width:100%;height:100%;overflow:visible}
 .tulip-stem{fill:none;stroke:#8aaf92;stroke-width:3;stroke-linecap:round}

@@ -17,8 +17,8 @@ Sitio estático sin compilación. Diseño pensado primero para móviles, adaptab
 - `js/config.js`: configuración de fecha (`INICIO`) y fotos (`FOTOS`).
 - `js/counter.js`, `js/album.js`, `js/sparkles.js`, `js/navigation.js`: funciones independientes.
 - `js/app.js`: inicializa los módulos.
-- `skils.md`: contexto, preferencias y registro de cambios.
-- `AGENTS.md`: instrucciones de trabajo para pr?ximas sesiones.
+- `skills.md`: contexto, preferencias y registro de cambios.
+- `AGENTS.md`: instrucciones de trabajo para próximas sesiones.
 
 ## Vista local
 
