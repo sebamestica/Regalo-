@@ -1,16 +1,33 @@
 # Regalo
 
-Página web en forma de carta. Es un sitio estático, sin build.
+Sitio estático sin compilación. Diseño pensado primero para móviles, adaptable a PC.
 
-## Archivos
-- `index.html` es la página completa (la imagen va incrustada).
-- `vercel.json` es la configuración mínima para Vercel.
+## Estructura
 
-## Desplegar en Vercel
-1. Entra a vercel.com con GitHub.
-2. Add New → Project y elige este repositorio.
-3. Framework Preset: Other. Deja todo lo demás por defecto y pulsa Deploy.
+- `index.html`: contenido y estructura.
+- `assets/portada.jpg`: fotografía de portada.
+- `css/base.css`: variables y estilos globales.
+- `css/decorations.css`: flores, corazones, orbes y brillos.
+- `css/content.css`: portada, contador, carta y álbum.
+- `css/counter.css`: contador «Llevamos» con seis unidades.
+- `css/interactions.css`: botones, navegación, Spotify y ajustes móviles.
+- `css/footer.css`: footer para compartir; QR estático en `assets/compartir-qr.svg`.
+- `css/flowers.css` y `js/flowers.js`: flores giratorias, tulipanes y ramilletes de la carta.
+- `css/castle.css` y `assets/castillo.svg`: castillo decorativo.
+- `js/config.js`: configuración de fecha (`INICIO`) y fotos (`FOTOS`).
+- `js/counter.js`, `js/album.js`, `js/sparkles.js`, `js/navigation.js`: funciones independientes.
+- `js/app.js`: inicializa los módulos.
+- `skils.md`: contexto, preferencias y registro de cambios.
+- `AGENTS.md`: instrucciones de trabajo para pr?ximas sesiones.
+
+## Vista local
+
+Puedes abrir `index.html` directamente en el navegador. Para usar un servidor local, ejecuta `python -m http.server 8000` y abre http://localhost:8000.
 
 ## Personalizar
-- Fecha del contador: constante `INICIO` al final de `index.html`.
-- Álbum opcional: sube fotos a `assets/` y agrégalas en la lista `FOTOS`.
+
+Edita la fecha y el álbum en `js/config.js` y el texto en `index.html`. Agrega las fotos del álbum en `assets/`.
+
+## Vercel
+
+Selecciona el preset Other, sin comando de compilación. Publica la carpeta completa, incluidos CSS, JS y assets.

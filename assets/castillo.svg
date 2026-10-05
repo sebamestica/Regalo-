@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 310" fill="none">
+  <style>
+    .castle-flag{transform-box:fill-box;transform-origin:left center;animation:flag-wave 3.2s ease-in-out infinite alternate}
+    .castle-flag--royal{animation-duration:3.8s;animation-delay:-1s}
+    @keyframes flag-wave{from{transform:skewY(-5deg) scaleX(.92)}to{transform:skewY(6deg) scaleX(1)}}
+    @media(prefers-reduced-motion:reduce){.castle-flag{animation:none}}
+  </style>
+  <defs>
+    <linearGradient id="stone" x1="120" y1="100" x2="280" y2="285" gradientUnits="userSpaceOnUse"><stop stop-color="#fff8ff"/><stop offset=".45" stop-color="#e0cef4"/><stop offset="1" stop-color="#ad8bd7"/></linearGradient>
+    <linearGradient id="roof" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b197df"/><stop offset=".5" stop-color="#8060bd"/><stop offset="1" stop-color="#583c90"/></linearGradient>
+    <linearGradient id="gold"><stop stop-color="#c69548"/><stop offset=".45" stop-color="#fff0be"/><stop offset="1" stop-color="#d4a85c"/></linearGradient>
+    <linearGradient id="door" x1="210" y1="221" x2="210" y2="284" gradientUnits="userSpaceOnUse"><stop stop-color="#58407d"/><stop offset="1" stop-color="#9e74b6"/></linearGradient>
+    <radialGradient id="halo"><stop stop-color="#fff3ce" stop-opacity=".9"/><stop offset=".6" stop-color="#ead2f3" stop-opacity=".6"/><stop offset="1" stop-color="#ead2f3" stop-opacity="0"/></radialGradient>
+    <symbol id="tower" viewBox="0 0 56 152">
+      <path d="M10 62h36v85H10z" fill="url(#stone)" stroke="#9c7cbd"/>
+      <path d="M9 63h38M9 70h38M9 133h38" stroke="url(#gold)" stroke-width="3"/>
+      <path d="M4 61 28 10 52 61Z" fill="url(#roof)" stroke="url(#gold)" stroke-width="2"/>
+      <path d="M28 13v45" stroke="#d9c8f1" stroke-opacity=".5"/>
+      <path d="M22 94v-9a6 6 0 0 1 12 0v9zM22 122v-9a6 6 0 0 1 12 0v9z" fill="#785b9e" stroke="#fff1c6" stroke-width="2"/>
+      <path d="M28 80v13m0 15v13" stroke="#dec3ea"/>
+      <path d="M28 10V0" stroke="#d4a85c" stroke-width="2"/>
+      <path class="castle-flag" d="m29 1 17 4-17 5" fill="#efb4d4" stroke="#d4a85c"/>
+    </symbol>
+    <symbol id="star" viewBox="0 0 20 20"><path d="M10 0 12 8 20 10 12 12 10 20 8 12 0 10 8 8Z" fill="#fff1bf"/></symbol>
+  </defs>
+  <ellipse cx="210" cy="157" rx="185" ry="143" fill="url(#halo)"/>
+  <path d="M100 161a111 111 0 0 1 220 0" stroke="url(#gold)" stroke-opacity=".45"/>
+  <ellipse cx="210" cy="288" rx="164" ry="12" fill="#9270b2" opacity=".15"/>
+  <!-- Rear spires and palace wings -->
+  <use href="#tower" x="108" y="80" width="56" height="152"/>
+  <use href="#tower" x="256" y="80" width="56" height="152"/>
+  <path d="M86 204h248v78H86z" fill="url(#stone)" stroke="#9c7cbd"/>
+  <path d="M85 204v-12h13v12h14v-12h13v12h14v-12h13v12h116v-12h13v12h14v-12h13v12h14v-12h13v12" fill="url(#stone)" stroke="url(#gold)" stroke-width="2"/>
+  <path d="M86 216h248M87 272h246" stroke="url(#gold)" stroke-width="3"/>
+  <!-- Central royal tower -->
+  <path d="M177 127h66v155h-66z" fill="url(#stone)" stroke="#9c7cbd"/>
+  <path d="m168 127 42-77 42 77Z" fill="url(#roof)" stroke="url(#gold)" stroke-width="2.5"/>
+  <path d="m210 55-17 67m17-67 17 67" stroke="#d9c8f1" stroke-opacity=".6"/>
+  <path d="M173 128h74M178 140h64M175 194h70" stroke="url(#gold)" stroke-width="3"/>
+  <path d="M210 51V22" stroke="#d4a85c" stroke-width="2"/>
+  <path class="castle-flag castle-flag--royal" d="M211 24c12-8 21 8 35 1l-4 14c-12 8-19-9-31-2z" fill="#ec9ecb" stroke="#d4a85c"/>
+  <circle cx="210" cy="19" r="4" fill="url(#gold)"/>
+  <path d="M200 179v-17a10 10 0 0 1 20 0v17z" fill="#7b5aa0" stroke="#fff0be" stroke-width="2.5"/>
+  <path d="M210 153v25m-9-13h18" stroke="#d5bce9"/>
+  <!-- Foreground towers -->
+  <use href="#tower" x="55" y="129" width="62" height="158"/>
+  <use href="#tower" x="303" y="129" width="62" height="158"/>
+  <g fill="#8361a4" stroke="#fff0be" stroke-width="2">
+    <path d="M128 253v-20a8 8 0 0 1 16 0v20zM153 253v-20a8 8 0 0 1 16 0v20zM251 253v-20a8 8 0 0 1 16 0v20zM276 253v-20a8 8 0 0 1 16 0v20z"/>
+  </g>
+  <!-- Heart crest, gilded entrance and steps -->
+  <path d="M210 218c-18-11-17-22-9-22 5 0 9 4 9 7 0-3 4-7 9-7 8 0 9 11-9 22Z" fill="#e6a3c9" stroke="url(#gold)" stroke-width="2"/>
+  <path d="M188 282v-34a22 22 0 0 1 44 0v34Z" fill="url(#door)" stroke="url(#gold)" stroke-width="4"/>
+  <path d="M210 229v53m-13-37v35m26-35v35" stroke="#d6b0d9" stroke-opacity=".6"/>
+  <circle cx="206" cy="262" r="2" fill="#ffe7a8"/><circle cx="214" cy="262" r="2" fill="#ffe7a8"/>
+  <path d="M183 283h54v5h-54zM175 288h70v5h-70zM167 293h86v5h-86z" fill="#e9ddf3" stroke="#bc9fce"/>
+  <path d="M51 283h128m63 0h128" stroke="url(#gold)" stroke-width="3" stroke-linecap="round"/>
+  <use href="#star" x="75" y="83" width="15" height="15"/>
+  <use href="#star" x="327" y="77" width="20" height="20"/>
+  <use href="#star" x="145" y="36" width="11" height="11"/>
+  <use href="#star" x="277" y="42" width="12" height="12"/>
+  <use href="#star" x="37" y="194" width="12" height="12"/>
+  <use href="#star" x="374" y="190" width="11" height="11"/>
+</svg>

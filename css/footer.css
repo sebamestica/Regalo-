@@ -1,0 +1,21 @@
+.share-footer{
+  position:relative;
+  z-index:1;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:20px;
+  padding:12px 28px calc(48px + var(--sa-b));
+  text-align:center;
+  color:var(--tinta-suave);
+}
+.share-footer p{max-width:32ch;font-size:1rem;font-weight:500;line-height:1.6;text-wrap:balance}
+.share-qr{
+  display:block;
+  width:min(222px,100%);
+  border-radius:16px;
+  overflow:hidden;
+  background:#fff;
+  box-shadow:0 10px 28px rgba(77,56,112,.12);
+}
+.share-qr img{display:block;width:100%;height:auto}

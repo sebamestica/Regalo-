@@ -1,0 +1,44 @@
+.orbes{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+  .orbes span{position:absolute;border-radius:50%;filter:blur(40px);opacity:.75}
+  .orbes span:nth-child(1){width:260px;height:260px;background:#b79cf0;top:-60px;left:-80px}
+  .orbes span:nth-child(2){width:220px;height:220px;background:#f4b8e0;top:30%;right:-90px;opacity:.5}
+  .orbes span:nth-child(3){width:300px;height:300px;background:#a7c4f5;bottom:5%;left:-120px;opacity:.45}
+  /* ═════ BRILLOS CAYENDO ═════ */
+  #brillos{position:fixed;inset:0;pointer-events:none;z-index:5}
+
+  /* ═════ DECORACIÓN: flores y corazones en CSS ═════ */
+  .decor{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+  .d{position:absolute;left:var(--x);top:var(--y);animation:flota var(--t,9s) ease-in-out var(--dl,0s) infinite alternate}
+  @keyframes flota{from{transform:translateY(0) rotate(0deg)}to{transform:translateY(-12px) rotate(6deg)}}
+  .flor{position:relative;width:var(--s);height:var(--s);opacity:var(--o,.8)}
+  .flor i{
+    position:absolute;left:32%;top:3%;width:36%;height:47%;
+    transform-origin:50% 100%;transform:rotate(calc(var(--r)*1deg));
+    border-radius:50% 50% 46% 46% / 72% 72% 28% 28%;
+    background:radial-gradient(circle at 35% 25%,rgba(255,255,255,.95),var(--p) 72%);
+    border:1px solid rgba(255,255,255,.7);
+    box-shadow:inset 0 2px 3px rgba(255,255,255,.8),0 2px 5px rgba(107,79,176,.15);
+  }
+  .flor b{
+    position:absolute;left:36%;top:36%;width:28%;height:28%;border-radius:50%;
+    background:radial-gradient(circle at 35% 30%,#fffaf0,#f6dfa8 75%);
+    box-shadow:inset 0 1px 2px rgba(255,255,255,.9),0 1px 3px rgba(107,79,176,.25);
+  }
+  .d{filter:drop-shadow(0 2px 4px rgba(107,79,176,.28))}
+  .cor{
+    --corazon:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 29'%3E%3Cpath d='M16 28.500C9 22.500 1 16 1 9 1 4.500 4.300 1 8.600 1 11.800 1 14.500 2.800 16 5.800 17.500 2.800 20.200 1 23.400 1 27.700 1 31 4.500 31 9 31 16 23 22.500 16 28.500z'/%3E%3C/svg%3E");
+    width:var(--s);height:calc(var(--s)*.906);
+    opacity:var(--o,.75);
+    background:
+      radial-gradient(circle at 28% 22%,rgba(255,255,255,.95) 0,rgba(255,255,255,0) 32%),
+      linear-gradient(160deg,rgba(255,255,255,.35),rgba(255,255,255,0) 55%),
+      var(--p);
+    -webkit-mask:var(--corazon) center/contain no-repeat;
+    mask:var(--corazon) center/contain no-repeat;
+    transform:rotate(var(--rot,-10deg));
+  }
+  .d:nth-child(even) .cor{--rot:11deg}
+
+
+  #brillos{z-index:0}
+  .d{filter:none}

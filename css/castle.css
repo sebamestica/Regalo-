@@ -1,0 +1,14 @@
+.castillo{
+  position:relative;
+  z-index:1;
+  display:flex;
+  justify-content:center;
+  margin:38px auto 0;
+  width:min(100%,420px);
+  opacity:1;
+  filter:drop-shadow(0 10px 14px rgba(107,79,176,.2));
+  pointer-events:none;
+}
+.castillo img{display:block;width:100%;height:auto}
+.carta-wrap{padding-bottom:12px}
+@media(min-width:640px){.castillo{margin-top:48px}}

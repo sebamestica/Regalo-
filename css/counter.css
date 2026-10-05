@@ -1,0 +1,10 @@
+.contador{width:100%;max-width:380px;margin:0 auto;text-align:center}
+.contador-title{font:italic 400 clamp(1.6rem,6vw,2rem) var(--serif);margin-bottom:16px;color:var(--tinta)}
+.contador-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:8px;row-gap:18px}
+.contador-unit{display:flex;flex-direction:column;align-items:center;min-width:0}
+.contador-unit dt{order:2;font-size:clamp(.72rem,2.8vw,.9rem);font-weight:500;line-height:1.5;color:var(--tinta-suave)}
+.contador-unit dd{font-size:clamp(1.8rem,8vw,2.5rem);font-weight:400;line-height:1.15;font-variant-numeric:tabular-nums;color:var(--tinta)}
+.contador-unit--time{border-top:1px solid rgba(255,255,255,.45);padding-top:16px}
+.contador-unit--time dd{font-size:clamp(2.4rem,11vw,3.5rem);font-weight:300;color:#fff;text-shadow:0 2px 12px rgba(63,45,115,.5)}
+.contador-unit--wide dd{font-size:clamp(1.35rem,6vw,2rem)}
+.desde{margin-top:20px;font-size:.84rem;font-weight:500;line-height:1.6;color:var(--tinta-suave)}

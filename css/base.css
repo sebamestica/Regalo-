@@ -1,0 +1,32 @@
+:root{
+    --foto:url("../assets/portada.jpg");
+    --tinta:#3f2d73;
+    --tinta-suave:#5a43a0;
+    --lila-profundo:#6b4fb0;
+    --lavanda-crema:#f3ecfb;
+    --crema:#fbf4ea;
+    --papel:#fffdf9;
+    --cristal:rgba(167,139,250,.24);
+    --cristal-borde:rgba(255,255,255,.55);
+    --sans:'Quicksand',system-ui,-apple-system,'Segoe UI',sans-serif;
+    --serif:'Newsreader',Georgia,'Times New Roman',serif;
+    --sa-t:env(safe-area-inset-top,0px);
+    --sa-b:env(safe-area-inset-bottom,0px);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+  body{
+    font-family:var(--sans);
+    color:var(--tinta);
+    background:linear-gradient(180deg,#cdb8f5 0%,#dccdf8 38%,#ece3fa 62%,var(--crema) 100%);
+    min-height:100vh;
+    overflow-x:hidden;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+  main{position:relative;z-index:1;padding-top:var(--sa-t);padding-bottom:var(--sa-b)}
+
+
+[hidden]{display:none!important}
+
+  main{padding:calc(var(--sa-t) + 16px) 18px 0}
